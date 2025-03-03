@@ -1,0 +1,6 @@
+dependencies:
+- name: spark-app-basis
+  repository: file://../../spark/spark-app-base
+  version: 0.0.1
+digest: sha256:9fb09584e535e4145490b5532c4e1e3caf480dcdf91a8d31456c176917a9f42f
+generated: "2025-03-03T14:19:50.229557+03:00"
