@@ -8,6 +8,8 @@ MLFLOW_MODEL_URI = "models:/my_model/Production" # MLflow-модель
 FEAST_REPO_PATH = "feast_repo/"  # Путь к репозиторию Feast
 FEATURE_SERVICE_NAME = "customer_features"  # Название Feature Service
 
+
+
 spark = SparkSession.builder \
   .appName("pd-model-batch-inference") \
   .getOrCreate()
