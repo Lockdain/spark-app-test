@@ -6,9 +6,9 @@ spark-app-basis:
 
   spark:
     driver:
-      cores: 2
-      memory: "10g"
+      cores: 1
+      memory: "8g"
     executor:
       instances: 5
       cores: 2
-      memory: "16g"
+      memory: "24g"
