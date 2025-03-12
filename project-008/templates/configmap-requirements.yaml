@@ -1,0 +1,5 @@
+{{- /* Получение содержимого requirements.txt */}}
+{{- $requirements := .Files.Get "src/requirements.txt" }}
+
+{{- /* Вызов шаблона из базового чарта */}}
+{{- include "spark-app-base.configmap-requirements" (dict "Release" .Release "requirements" $requirements) }}
