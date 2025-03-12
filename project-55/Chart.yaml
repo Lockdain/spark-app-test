@@ -7,4 +7,4 @@ dependencies:
   - name: spark-app-basis
     version: 0.0.1
     repository: "file:///Users/alexsergeenko/Documents/Projects/Neoflex/spark/spark-app-base"
-    condition: spark-app.enabled
+    condition: spark-app.enable
