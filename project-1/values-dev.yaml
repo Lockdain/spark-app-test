@@ -1,14 +1,14 @@
 spark-app-basis:
   kubeflow:
     sparkOperator:
-      serviceAccount: <no value>
-      namespace: <no value>
+      serviceAccount: spark-service-account
+      namespace: spark-operator
 
   spark:
     driver:
-      cores: <no value>
-      memory: "<no value>"
+      cores: 1
+      memory: "8g"
     executor:
-      instances: <no value>
-      cores: <no value>
-      memory: "<no value>"
+      instances: 5
+      cores: 2
+      memory: "16g"
