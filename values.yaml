@@ -1,3 +1,0 @@
-spark-app-basis:
-  spark:
-    mainApplicationFilename: "main.py"
