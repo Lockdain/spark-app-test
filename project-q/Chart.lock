@@ -1,0 +1,6 @@
+dependencies:
+- name: spark-app-basis
+  repository: file:///Users/alexsergeenko/Documents/Projects/Neoflex/spark/spark-app-base
+  version: 0.0.1
+digest: sha256:7eaa238fc4298fa5a56518a007804cb65b8d37c4b6f550d7ecd09ab80afc637d
+generated: "2025-03-13T00:10:46.733526+03:00"
