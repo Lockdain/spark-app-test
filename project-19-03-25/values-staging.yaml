@@ -13,8 +13,8 @@ spark-app-basis:
         enabled: true
         name: nvidia.com/gpu
         quantity: 1
-      cores: 150m
-      coreLimit: 200m
+      cores: 0.5
+      coreLimit: 1
       memory: "500m"
     executor:
       javaOptions:
@@ -25,6 +25,6 @@ spark-app-basis:
         name: nvidia.com/gpu
         quantity: 1
       instances: 1
-      cores: 150m
-      coreLimit: 200m
+      cores: 0.5
+      coreLimit: 1
       memory: "500m"
