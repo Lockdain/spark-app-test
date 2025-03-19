@@ -1,0 +1,18 @@
+spark-app-basis:
+  kubeflow:
+    sparkOperator:
+      serviceAccount: spark-operator-spark
+      namespace: default
+
+  spark:
+    driver:
+      gpu:
+        enabled: <no value>
+        name: <no value>
+        quantity: <no value>
+      cores: 1
+      memory: "500m"
+    executor:
+      instances: 1
+      cores: 1
+      memory: "500m"
