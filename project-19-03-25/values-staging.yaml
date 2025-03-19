@@ -6,11 +6,15 @@ spark-app-basis:
 
   spark:
     driver:
+      javaOptions:
+        enbled: true
+        values: 
       gpu:
         enabled: true
         name: nvidia.com/gpu
         quantity: 1
       cores: 1
+      coreLimit: 200m
       memory: "500m"
     executor:
       gpu:
@@ -19,4 +23,5 @@ spark-app-basis:
         quantity: 1
       instances: 1
       cores: 1
+      coreLimit: 200m
       memory: "500m"
