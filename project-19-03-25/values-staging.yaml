@@ -33,3 +33,8 @@ spark-app-basis:
       cores: 1
       coreLimit: 1
       memory: "500m"
+      env:
+         - name: ENV1
+           value: VAL1
+         - name: ENV2
+           value: VAL2
