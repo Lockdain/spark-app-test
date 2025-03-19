@@ -7,9 +7,9 @@ spark-app-basis:
   spark:
     driver:
       gpu:
-        enabled: <no value>
-        name: <no value>
-        quantity: <no value>
+        enabled: true
+        name: nvidia.com/gpu
+        quantity: 1
       cores: 1
       memory: "500m"
     executor:
