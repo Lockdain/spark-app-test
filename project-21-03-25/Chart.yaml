@@ -5,6 +5,6 @@ files:
 - src/**
 dependencies:
   - name: spark-app-basis
-    version: 0.0.1
+    version: <no value>
     repository: "oci://harbor.neoflex.ru/dognauts-helm"
     condition: spark-app.enabled
