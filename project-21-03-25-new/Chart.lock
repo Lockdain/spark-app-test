@@ -1,0 +1,6 @@
+dependencies:
+- name: spark-app-basis
+  repository: oci://harbor.neoflex.ru/dognauts-helm
+  version: 0.0.1
+digest: sha256:bbea189618911b0bce9ee406bc21f58c9c345fa10215d62e867116551ae93af4
+generated: "2025-03-21T17:28:29.213554+03:00"
