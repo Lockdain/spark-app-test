@@ -48,4 +48,9 @@ spark-app-basis:
          - name: ENV2
            value: VAL2
     restartPolicy: 
+      enabled: true
       type: Never
+      onFailureRetries: 1
+      onFailureRetryInterval: 1
+      onSubmissionFailureRetries: 5
+      onSubmissionFailureRetryInterval: 20
