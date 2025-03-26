@@ -45,9 +45,6 @@ def main():
       .hadoopConfiguration().set("fs.s3a.path.style.access", "true")
   spark.sparkContext._jsc \
       .hadoopConfiguration().set("fs.s3a.endpoint", s3_host_port)
-
-  s3_input_path = "s3a://data/input-data.parquet"
-  s3_output_path = "s3a://data/output-data.parquet"
   model_uri = "models:/iris-debug_2/1"
   
   mlflow.set_tracking_uri(mlflow_host_port)
