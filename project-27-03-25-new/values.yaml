@@ -1,5 +1,5 @@
+subjectArea: batch-model-inference
 spark-app-basis:
-  subjectArea: batch-model-inference
   spark:
     mainApplicationFilename: "main.py"
     ui:
