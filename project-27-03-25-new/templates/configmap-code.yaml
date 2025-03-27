@@ -7,4 +7,4 @@
 {{- end }}
 
 {{- /* Вызов шаблона из базового чарта */}}
-{{- include "spark-app-base.configmap-code" (dict "Release" .Release "files" $files) }}
+{{- include "spark-app-base.configmap-code" (dict "Release" .Release "Values" $.Values.spark-app-basis "files" $files) }}
