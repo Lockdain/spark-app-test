@@ -1,5 +1,6 @@
 spark-app-basis:
   spark:
     mainApplicationFilename: "main.py"
+    subjectArea: batch-model-inference
     ui:
       port: 4045

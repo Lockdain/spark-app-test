@@ -8,3 +8,5 @@ dependencies:
     version: 0.0.1
     repository: "oci://harbor.neoflex.ru/dognauts-helm"
     condition: spark-app.enabled
+customAttributes:
+  subjectArea: batch-model-inference
