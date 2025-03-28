@@ -9,6 +9,6 @@
 {{- /* Вызов шаблона из базового чарта */}}
 {{- include "spark-app-base.configmap-code" (dict 
   "Release" .Release 
-  "Values"  $.Values 
+  "Values"  (merge .Values (dict "global" .Values.global))
   "files" $files
 ) }}

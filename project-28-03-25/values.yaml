@@ -1,6 +1,11 @@
 subjectArea: batch-model-inference
 spark-app-basis:
-  subjectArea: batch-model-inference
+  global:
+    parentChart:
+      name: <no value>   
+      version: <no value>
+      appVersion: <no value>
+      subjectArea: batch-model-inference
   spark:
     mainApplicationFilename: "main.py"
     ui:
