@@ -13,6 +13,6 @@
 {{- include "spark-app-base.configmap-code" (dict 
   "Root" $.Subcharts.sparkAppBasis 
   "Release" .Release 
-  "Values"  .Values.sparkAppBasis.values 
+  "Values"  $.Values 
   "files" $files
 ) }}

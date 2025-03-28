@@ -9,7 +9,7 @@
 {{- include "spark-app-base.configmap-requirements" (dict 
   "Root" $.Subcharts.sparkAppBasis  
   "Release" .Release 
-  "Values"  .Values.sparkAppBasis.values 
+  "Values"  $.Values 
   "requirements" $requirements 
   "conda" $conda
 ) }}
