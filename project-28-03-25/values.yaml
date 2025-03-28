@@ -1,5 +1,6 @@
 subjectArea: batch-model-inference
 spark-app-basis:
+  subjectArea: batch-model-inference
   global:
     parentChart:
       name: spark-data-pipeline   
