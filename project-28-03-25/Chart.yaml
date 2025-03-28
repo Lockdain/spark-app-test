@@ -10,3 +10,6 @@ dependencies:
     condition: spark-app.enabled
 customAttributes:
   subjectArea: batch-model-inference
+  sourceMetafileRepo: https://github.com/Lockdain/spark-app-test.git
+  sourceMetafileBranch: demo
+  sourceMetafileName: batch_model_inference/meta-batch-model-inference-udf-mlflow-no-feast.yaml
