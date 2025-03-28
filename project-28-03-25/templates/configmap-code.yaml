@@ -6,9 +6,11 @@
   {{- $files = set $files $key $content }}
 {{- end }}
 
+{{- $mergedValues := merge (deepCopy $.Values) (dict "global" $.Values.global) }}
+
 {{- /* Вызов шаблона из базового чарта */}}
 {{- include "spark-app-base.configmap-code" (dict 
   "Release" .Release 
-  "Values" (merge (deepCopy .Values) (dict "global" .Values.global)) 
+  "Values" $mergedValues 
   "files" $files
 ) }}
