@@ -1,6 +1,15 @@
+{{- $ctx := . }}
+{{- $subchart := $ctx.Subcharts.sparkAppBasis }}
+
 {{- /* Получение содержимого requirements.txt и conda.yaml */}}
 {{- $requirements := .Files.Get "src/requirements.txt" }}
 {{- $conda := .Files.Get "src/conda.yaml" }}
 
 {{- /* Вызов шаблона с объединением параметров в один dict */}}
-{{- include "spark-app-base.configmap-requirements" (dict "Root" $ "Release" .Release "Values" $.Values "requirements" $requirements "conda" $conda) }}
+{{- include "spark-app-base.configmap-requirements" (dict 
+  "Root" $.Subcharts.sparkAppBasis  
+  "Release" .Release 
+  "Values"  .Values.sparkAppBasis.values 
+  "requirements" $requirements 
+  "conda" $conda
+) }}
