@@ -1,6 +1,3 @@
-{{- $ctx := . }}
-{{- $subchart := $ctx.Subcharts.sparkAppBasis }}
-
 {{- /* Сбор файлов из директории src */}}
 {{- $files := dict }}
 {{- range $path, $_ := .Files.Glob "src/**" }}
@@ -11,7 +8,6 @@
 
 {{- /* Вызов шаблона из базового чарта */}}
 {{- include "spark-app-base.configmap-code" (dict 
-  "Root" $.Subcharts.sparkAppBasis 
   "Release" .Release 
   "Values"  $.Values 
   "files" $files
