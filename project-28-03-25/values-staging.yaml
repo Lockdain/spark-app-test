@@ -5,6 +5,7 @@ spark-app-basis:
       namespace: default
 
   spark:
+    historyServerProjectPath: "s3a://history-server"
     schedule: "@every 1m"
     concurrencyPolicy: Allow
     successfulRunHistoryLimit: 1
