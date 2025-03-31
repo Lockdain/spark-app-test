@@ -1,0 +1,12 @@
+subjectArea: batch-model-inference
+spark-app-basis:
+  subjectArea: batch-model-inference
+  global:
+    parentChart:
+      name: spark-data-pipeline   
+      version: 0.0.1
+      subjectArea: batch-model-inference
+  spark:
+    mainApplicationFilename: "main.py"
+    ui:
+      port: 4045

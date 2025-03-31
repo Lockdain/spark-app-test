@@ -1,0 +1,13 @@
+{{- /* Получение содержимого requirements.txt и conda.yaml */}}
+{{- $requirements := .Files.Get "src/requirements.txt" }}
+{{- $conda := .Files.Get "src/conda.yaml" }}
+
+{{- $mergedValues := merge (deepCopy $.Values) (dict "global" $.Values.global) }}
+
+{{- /* Вызов шаблона с объединением параметров в один dict */}}
+{{- include "spark-app-base.configmap-requirements" (dict 
+  "Release" .Release 
+  "Values" $mergedValues 
+  "requirements" $requirements 
+  "conda" $conda
+) }}
